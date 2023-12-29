@@ -1,0 +1,13 @@
+<div class="profile-page">
+  <div class="container profile-container">
+    <h1>{{currentUser.username}}</h1>
+
+    <img class="profile-image" src={{currentUser.picture}} alt="Profile Image">
+    <a class="btn btn-danger" href="/profile/edit" style="width: fit-content;"><i data-feather="trash-2" width="16"
+        style="color: blue;"></i></a>
+    <div class="text-center">
+      <i class="fas fa-user-circle"></i>
+    </div>
+    <h6>Email: {{currentUser.email}}</h6>
+  </div>
+</div>
