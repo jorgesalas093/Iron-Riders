@@ -6,6 +6,7 @@ const commentsController = require("../controllers/comments.controller");
 const likesController = require("../controllers/like.controller");
 const authMiddleware = require("../middlewares/auth.middlewares");
 const upload = require("../config/storage.config");
+const { multer, multerConfig } = require("../config/storage.config");
 const passport = require('passport');
 
 const GOOGLE_SCOPES = [
@@ -32,19 +33,21 @@ router.get('/auth/google/callback', authMiddleware.isNotAuthenticated, authContr
 // users
 router.get("/profile", authMiddleware.isAuthenticated, usersController.profile);
 router.get("/profile/edit", authMiddleware.isAuthenticated, usersController.profileEdit);
-router.post("/profile/edit", authMiddleware.isAuthenticated, usersController.doProfileEdit);
+router.post("/profile/:id/edit", authMiddleware.isAuthenticated, usersController.doProfileEdit);
+
 // riders
 router.get("/riders", ridersController.list);
-
-router.get("/riders/create", authMiddleware.isAdmin, ridersController.create);
-router.post("/riders/create", authMiddleware.isAdmin, upload.single('image'), ridersController.doCreate);
-router.get("/riders/:id",  ridersController.details);
+router.get("/riders/create", authMiddleware.isAuthenticated, authMiddleware.isAdmin, ridersController.create);
+router.post("/riders/create", authMiddleware.isAuthenticated, authMiddleware.isAdmin, multerConfig.fields([{ name: 'image', maxCount: 1 }, { name: 'gallery', maxCount: 5 }]), ridersController.doCreate);
+router.get("/riders/:id", ridersController.details);
 router.get("/riders/:id/delete", authMiddleware.isAdmin, ridersController.delete);
 router.get("/riders/:id/update", authMiddleware.isAdmin, ridersController.update);
-router.post("/riders/:id/update", authMiddleware.isAdmin, upload.single('image'), ridersController.doUpdate);
+router.post("/riders/:id/update", authMiddleware.isAdmin, multerConfig.fields([{ name: 'image', maxCount: 1 }, { name: 'gallery', maxCount: 5 }]), ridersController.doUpdate);
+
+//gallery
+router.get('/riders/:id/gallery', ridersController.gallery);
 
 // comments
-
 router.get("/comments/:id/delete", authMiddleware.isAuthenticated, commentsController.delete);
 router.post("/comments/:id/create", authMiddleware.isAuthenticated, commentsController.doCreate);
 

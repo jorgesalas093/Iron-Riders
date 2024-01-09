@@ -13,10 +13,12 @@ module.exports.profileEdit = (req, res, next) => {
 
 module.exports.doProfileEdit = (req, res, next) => {
   const { userID } = req.params
+
   const newUser = req.body
-  user.findByIdandUpdate(_id)
+  console.log(">>>>>>>>>>>>>>>>", userID);
+  User.findByIdAndUpdate(userID, newUser)
     .then(() => {
-      res.redirect("profile");
+      res.redirect(`/profile`);
     })
     .catch(next);
 

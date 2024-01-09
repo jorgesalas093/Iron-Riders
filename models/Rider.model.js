@@ -50,6 +50,9 @@ const RiderSchema = mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    gallery: {
+      type: [String],
+    },
   },
   {
     virtual: true,
