@@ -14,7 +14,7 @@ const RiderSchema = mongoose.Schema(
     },
     nationality: {
       type: String,
-      required: true,
+     
     },
     bike: {
       type: String,
