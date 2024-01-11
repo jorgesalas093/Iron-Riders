@@ -5,7 +5,6 @@ const ridersController = require("../controllers/riders.controller");
 const commentsController = require("../controllers/comments.controller");
 const likesController = require("../controllers/like.controller");
 const authMiddleware = require("../middlewares/auth.middlewares");
-const upload = require("../config/storage.config");
 const { multer, multerConfig } = require("../config/storage.config");
 const passport = require('passport');
 
@@ -32,8 +31,8 @@ router.get('/auth/google/callback', authMiddleware.isNotAuthenticated, authContr
 
 // users
 router.get("/profile", authMiddleware.isAuthenticated, usersController.profile);
-router.get("/profile/edit", authMiddleware.isAuthenticated, usersController.profileEdit);
-router.post("/profile/:id/edit", authMiddleware.isAuthenticated, usersController.doProfileEdit);
+router.get("/profile/:id/edit", authMiddleware.isAuthenticated, usersController.profileEdit);
+router.post("/profile/:id/edit", authMiddleware.isAuthenticated, multerConfig.fields([{ name: 'picture', maxCount: 1 }]), usersController.doProfileEdit);
 
 // riders
 router.get("/riders", ridersController.list);
@@ -52,8 +51,8 @@ router.get("/comments/:id/delete", authMiddleware.isAuthenticated, commentsContr
 router.post("/comments/:id/create", authMiddleware.isAuthenticated, commentsController.doCreate);
 
 //forum
-//router.get("/forum", forumController.doCreate);
-//router.post("/forum", forumController.doCreate);
+//router.get("/forum", authMiddleware.isAuthenticated, commentsController.ForumDelete);
+//router.post("/forum", authMiddleware.isAuthenticated, commentsController.ForumDoCreate);
 
 // likes
 

@@ -8,41 +8,33 @@ module.exports.profile = (req, res, next) => {
 }
 
 module.exports.profileEdit = (req, res, next) => {
-  res.render("users/profileUpdate");
+  const { id } = req.params;
+
+  User.findById(id)
+
+    .then(user => {
+      const userPicture = User.schema.path('picture').enumValues;
+      user = req.session.currentUser
+      res.render('users/profileUpdate', { user, userPicture });
+
+    })
+    .catch(next)
+
 }
 
 module.exports.doProfileEdit = (req, res, next) => {
-  const { userID } = req.params
+  const { id } = req.params
+  const newUser = { ...req.body }
 
-  const newUser = req.body
-  console.log(">>>>>>>>>>>>>>>>", userID);
-  User.findByIdAndUpdate(userID, newUser)
-    .then(() => {
+  if (req.files && req.files.picture && req.files.picture.length) {
+    newUser.picture = req.files.picture[0].path;
+  }
+
+  User.findByIdAndUpdate(id, newUser, { new: true })
+    .then((dbUser) => {
+      req.session.currentUser = dbUser;
       res.redirect(`/profile`);
     })
     .catch(next);
 
 }
-/*
-module.exports.profileEdit = (req, res, next) => {
-  const { id } = req.params;
-
-  username.findById(id)
-    .then(user => {
-      res.render("users/profileUpdate");
-    })
-    .catch(next)
-}
-
-module.exports.doProfileEdit = (req, res, next) => {
-  const { id } = req.params;
-  if (req.file) {
-    req.body.image = req.file.path;
-  }
-
-  username.findByIdAndUpdate(id, req.body, { new: true })
-    .then(user => {
-      res.redirect(`/profile/${user._id}`);
-    })
-    .catch(next)
-}*/

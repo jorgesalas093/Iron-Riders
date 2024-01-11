@@ -15,8 +15,7 @@ module.exports.list = function (req, res, next) {
   Rider.find(query)
     .populate('likes')
     .then((riders) => {
-
-      res.render("riders/list", { riders })
+      res.render("riders/list", { riders, isLegendView: riders[0].legend })
     })
     .catch((error) => next(error));
 };
@@ -84,18 +83,18 @@ module.exports.doUpdate = function (req, res, next) {
   const { id } = req.params;
   const updates = { ...req.body };
 
-  console.log("------------ ", req.files)
+  console.log("------------>>>>>>>>> ", req.files.image)
 
-  if (req.file) {
-    updates.image = req.file.path;
+  if (req.files) {
+    updates.image = req.files.image[0].path;
   }
 
   if (req.files) {
-    updates.gallery = req.files.gallery.map(gal => gal.path);
+    updates.gallery = req.files.gallery.map(galery => galery.path);
   }
 
   Rider.findByIdAndUpdate(id, updates, { new: true })
-    .then((riderDB) => res.redirect(`/riders/${id}`))
+    .then((riderDB) => res.redirect(`/riders/${riderDB.id}`))
     .catch((err) => {
       //Comprobar err instanceof mongoose.ValidationError
 

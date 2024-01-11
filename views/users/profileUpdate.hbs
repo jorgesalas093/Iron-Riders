@@ -12,5 +12,5 @@
             class="{{#if errors}}is-invalid{{/if}} form-control" id="picture">
     </div>
 
-    <button href="/profile/edit" type="submit" class="btn btn-primary">Submit</button>
+    <button href="/profile/{{currentUser._id}}/edit" type="submit" class="btn btn-primary">Submit</button>
 </form>
