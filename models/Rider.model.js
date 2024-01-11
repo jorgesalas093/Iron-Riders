@@ -14,7 +14,7 @@ const RiderSchema = mongoose.Schema(
     },
     nationality: {
       type: String,
-     
+
     },
     bike: {
       type: String,
@@ -44,6 +44,9 @@ const RiderSchema = mongoose.Schema(
       type: String,
     },
     races: {
+      type: String,
+    },
+    merchandising: {
       type: String,
     },
     legend: {
