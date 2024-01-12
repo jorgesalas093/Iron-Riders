@@ -1,16 +1,17 @@
-<div class="col">
-  <div class="card h-100">
-    <div class="card-body d-flex flex-column justify-content-between">
+<div>
+  <div class="card h-100 bg-secondary">
+    <div class="card-body ">
       <div>
         <a href="/riders/{{rider.id}}" class="link-opacity-50-hover"><img class="card-img" src={{rider.image}} /></a>
-        <br>
-        <h5 class="card-title"><img width="25" src={{rider.flag}} /> {{rider.name}}</h5>
-        <div class="d-flex justify-content-end">
-          <form action="/user/{{rider._id}}/like" method="POST">
-            <button type="submit"
-              class="btn  {{#riderIsLikedByUser likes=rider.likes userId=currentUser._id}} btn-danger {{else}} btn-secondary {{/riderIsLikedByUser}}">Likes
-              {{rider.likes.length}}</button>
-          </form>
+        <div class="cardText">
+          <h5 class="card-title"><img width="25" src={{rider.flag}} /> {{rider.name}}</h5>
+          <div class="d-flex justify-content-end">
+            <form action="/user/{{rider._id}}/like" method="POST">
+              <button type="submit"
+                class="btn  {{#riderIsLikedByUser likes=rider.likes userId=currentUser._id}} btn-danger {{else}} btn-secondary {{/riderIsLikedByUser}}">Likes
+                {{rider.likes.length}}</button>
+            </form>
+          </div>
         </div>
       </div>
 

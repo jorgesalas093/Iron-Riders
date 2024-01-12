@@ -1,5 +1,6 @@
 const Rider = require("../models/Rider.model");
 const Comment = require("../models/Comment.model");
+const User = require('../models/User.model');
 
 module.exports.list = function (req, res, next) {
   const query = {};

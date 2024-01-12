@@ -43,7 +43,7 @@
 
     {{#if rider.merchandising}}
 
-    <p> <a class="custom-btn" href="{{rider.merchandising}}">Merchandising</a></p>
+    <p> <a class="custom-btn" target="_blank" href="{{rider.merchandising}}">Merchandising</a></p>
 
     {{/if}}
 
@@ -56,10 +56,12 @@
   {{!-- AQUI VAN LOS BOTONES DE EDITAR, BORRAR --}}
 
   <div>
+    {{#if currentUser.isAdmin}}
     <a class="btn btn-success" href="/riders/{{rider._id}}/update" style="width: fit-content;"><i
         data-feather="edit"></i></a>
     <a class="btn btn-danger" href="/riders/{{rider._id}}/delete" style="width: fit-content;"><i
         data-feather="trash-2"></i></a>
+    {{/if}}
     <a class="btn btn-secondary" href="/riders" style="width: fit-content;"><i data-feather="rider"></i></a>
   </div>
   <hr>
