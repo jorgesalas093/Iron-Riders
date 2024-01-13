@@ -1,34 +1,32 @@
-<nav class="navbar" style="background-color: #E3F2FD;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/"><img src="/images/logojpeg.jpeg" align-items="center" width="40px"
+<nav class="navbar" style="background-color: #425969;">
+  <div class="container-fluid ">
+    <a class="navbar-brand " href="/"><img src="/images/logojpeg.jpeg" align-items="center" width="40px"
         height="40px"></img></a>
-    <ul class="nav nav-tabs">
+    <ul class="nav  ">
       {{#if currentUser}}
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/profile">Profile</a>
+      <li class="">
+        <a class="nav-link active text-white" aria-current="page" href="/profile">Profile</a>
       </li>
       {{#if currentUser.isAdmin}}
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/riders/create">Create Rider</a>
+        <a class="nav-link active text-white" aria-current="page" href="/riders/create">Create Rider</a>
       </li>
       {{/if}}
       {{else}}
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/register">Register</a>
+        <a class="nav-link active text-white" aria-current="page" href="/register">Register</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/login">Login</a>
+        <a class="nav-link active text-white" aria-current="page" href="/login">Login</a>
       </li>
       {{/if}}
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/riders">Riders List</a>
+        <a class="nav-link active text-white" aria-current="page" href="/riders">Riders List</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/riders?legend=true">Riders Legends</a>
+        <a class="nav-link active text-white" aria-current="page" href="/riders?legend=true">Riders Legends</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/forum">Forum</a>
-      </li>
+
       <li class="nav-item">
         <a class="nav-link active text-danger" aria-current="page" href="/logout">Logout</a>
       </li>
@@ -39,10 +37,10 @@
       {{#if isLegendView}}
       <input type="hidden" name="legend" value="true" />
       {{/if}}
-      <button class=" btn btn-outline-success" type="submit">Search</button>
+      <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
     {{#if currentUser}}
-    <div class="mb-2 mr-2">
+    <div class="mb-2 mr-2 text-white">
       Hello,
       {{currentUser.username}}
     </div>

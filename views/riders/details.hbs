@@ -6,33 +6,48 @@
           height="25px" /></h1>
       <img src="{{rider.image}}" class="img-thumbnail" alt="{{rider.name}}" width="450" />
     </div>
-    <div class="ms-5 mt-5 justify-content-center">
-      <p> <b>From</b>: {{rider.nationality}} </p>
+    <div>
+      <table class="table table-hover table-dark">
+        <div class="ms-5 mt-5 justify-content-center">
+          <thead>
+            <tr>
+              <th scope="col">DETAILS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+                <p> <b>From</b>: {{rider.nationality}} </p>
 
-      {{#if rider.bike}}
-      <p> <b>Bike:</b> {{rider.bike}} </p>
-      <p> <b>Date Of Birth:</b> {{rider.dateOfBirth}} </p>
-      {{else}}
-      <p> <b>Date Of Birth:</b> {{rider.dateOfBirth}} </p>
-      {{/if}}
+              </th>
+            </tr>
 
-      <p> <b>Place Of Birth:</b> {{rider.placeOfBirth}} </p>
-      <p> <b>Races:</b> {{rider.races}} </p>
+            {{#if rider.bike}}
+            <p> <b>Bike:</b> {{rider.bike}} </p>
+            <p> <b>Date Of Birth:</b> {{rider.dateOfBirth}} </p>
+            {{else}}
+            <p> <b>Date Of Birth:</b> {{rider.dateOfBirth}} </p>
+            {{/if}}
+
+            <p> <b>Place Of Birth:</b> {{rider.placeOfBirth}} </p>
+            <p> <b>Races:</b> {{rider.races}} </p>
+        </div>
+        <div class="ms-5 mt-5">
+          {{#if rider.height}}
+          <p> <b>Height:</b> {{rider.height}} </p>
+          <p> <b>World Championship:</b> {{rider.worldChampionship}} </p>
+          {{else}}
+          <p> <b>World Championship:</b> {{rider.worldChampionship}} </p>
+          {{/if}}
+
+          <p> <b>Victories:</b> {{rider.victories}} </p>
+          <p> <b>Podiums:</b> {{rider.podiums}} </p>
+          <p> <b>Poles:</b> {{rider.poles}} </p>
+
+        </div>
+        </tbody>
+      </table>
     </div>
-    <div class="ms-5 mt-5">
-      {{#if rider.height}}
-      <p> <b>Height:</b> {{rider.height}} </p>
-      <p> <b>World Championship:</b> {{rider.worldChampionship}} </p>
-      {{else}}
-      <p> <b>World Championship:</b> {{rider.worldChampionship}} </p>
-      {{/if}}
-
-      <p> <b>Victories:</b> {{rider.victories}} </p>
-      <p> <b>Podiums:</b> {{rider.podiums}} </p>
-      <p> <b>Poles:</b> {{rider.poles}} </p>
-
-    </div>
-
   </div>
 
   <div>
