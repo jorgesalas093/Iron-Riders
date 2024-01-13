@@ -86,7 +86,7 @@ module.exports.doUpdate = function (req, res, next) {
 
   console.log("------------>>>>>>>>> ", req.files.image)
 
-  if (req.files) {
+  if (req.files.image) {
     updates.image = req.files.image[0].path;
   }
 

@@ -2,10 +2,10 @@ body {
   font: 1rem/1.5 var(--bs-font-sans-serif);
   width: 100%;
   height: 100%;
-  background-image: url("../images/WhatsApp Image 2024-01-13 at 09.15.04.jpeg");
+  background-image: url("../images/waving-checkered-flag-realistic-illustration-photo3.psd");
   background-position: center;
-
-  background-size: cover
+  background-repeat: no-repeat;
+  background-size:as
 }
 
 a {
