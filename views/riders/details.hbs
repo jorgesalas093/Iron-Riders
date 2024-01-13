@@ -6,7 +6,7 @@
           alt="{{rider.name}}" width="35px" height="25px" /></h1>
       <img src="{{rider.image}}" class="img-thumbnail" alt="{{rider.name}}" width="450" />
     </div>
-    <div class="ms-5 mt-5">
+    <div class="ms-5 mt-5 flex-column">
 
       <table class="custom-table table table-hover table-dark">
 
@@ -49,7 +49,7 @@
           </tr>
         </tbody>
       </table>
-      <div>
+      <div class="d-flex justify-content-around">
         {{#if rider.merchandising}}
         <div class="me-4">
           <a class="custom-btn" target="_blank" href="{{rider.merchandising}}">Merchandising</a></p>
@@ -60,9 +60,8 @@
             onclick="window.location.href='/riders/{{rider._id}}/gallery'">Gallery</button>
         </div>
       </div>
-    </div>
-    <div>
-      <div>
+
+      <div class="d-flex flex-colum justify-content-around mt-3">
         {{#if currentUser.isAdmin}}
         <a class="btn btn-success" href="/riders/{{rider._id}}/update" style="width: fit-content;"><i
             data-feather="edit"></i></a>
@@ -72,8 +71,8 @@
         <a class="btn btn-secondary" href="/riders" style="width: fit-content;"><i data-feather="riders"></i></a>
       </div>
 
-
     </div>
+
 
   </div>
 

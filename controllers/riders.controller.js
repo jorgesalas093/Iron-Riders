@@ -16,7 +16,7 @@ module.exports.list = function (req, res, next) {
   Rider.find(query)
     .populate('likes')
     .then((riders) => {
-      res.render("riders/list", { riders, isLegendView: riders[0].legend })
+      res.render("riders/list", { riders, isLegendView: riders[0]?.legend })
     })
     .catch((error) => next(error));
 };
