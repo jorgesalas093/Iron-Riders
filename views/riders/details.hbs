@@ -2,84 +2,113 @@
   <div class="col-12 d-flex justify-content-start">
 
     <div>
-      <h1 class="mt-3">{{rider.name}} <img src="{{rider.flag}}" class="card-flag" alt="{{rider.name}}" width="35px"
-          height="25px" /></h1>
+      <h1 class="bg-light mt-3 d-flex justify-content-center">{{rider.name}} <img src="{{rider.flag}}" class="card-flag"
+          alt="{{rider.name}}" width="35px" height="25px" /></h1>
       <img src="{{rider.image}}" class="img-thumbnail" alt="{{rider.name}}" width="450" />
     </div>
-    <div>
-      <table class="table table-hover table-dark">
-        <div class="ms-5 mt-5 justify-content-center">
-          <thead>
-            <tr>
-              <th scope="col">DETAILS</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>
-                <p> <b>From</b>: {{rider.nationality}} </p>
+    <div class="ms-5 mt-5">
 
-              </th>
-            </tr>
+      <table class="custom-table table table-hover table-dark">
 
+        <tbody>
+          <h3 class=" d-flex justify-content-center bg-dark text-white">DETAILS</h3>
+          <tr>
+            <td>
+              <p> <b>From</b>: {{rider.nationality}} </p>
+            </td>
             {{#if rider.bike}}
-            <p> <b>Bike:</b> {{rider.bike}} </p>
-            <p> <b>Date Of Birth:</b> {{rider.dateOfBirth}} </p>
-            {{else}}
-            <p> <b>Date Of Birth:</b> {{rider.dateOfBirth}} </p>
+            <td>
+              <p> <b>Bike:</b> {{rider.bike}} </p>
+            </td>
             {{/if}}
 
-            <p> <b>Place Of Birth:</b> {{rider.placeOfBirth}} </p>
-            <p> <b>Races:</b> {{rider.races}} </p>
-        </div>
-        <div class="ms-5 mt-5">
-          {{#if rider.height}}
-          <p> <b>Height:</b> {{rider.height}} </p>
-          <p> <b>World Championship:</b> {{rider.worldChampionship}} </p>
-          {{else}}
-          <p> <b>World Championship:</b> {{rider.worldChampionship}} </p>
-          {{/if}}
+          </tr>
+          <tr>
+            <td>
+              <p> <b>Place Of Birth:</b> {{rider.placeOfBirth}} </p>
+            </td>
+            <td>
+              <p> <b>Date Of Birth:</b> {{rider.dateOfBirth}} </p>
 
-          <p> <b>Victories:</b> {{rider.victories}} </p>
-          <p> <b>Podiums:</b> {{rider.podiums}} </p>
-          <p> <b>Poles:</b> {{rider.poles}} </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              {{#if rider.height}}
+              <p> <b>Height:</b> {{rider.height}} </p>
+              {{/if}}
 
-        </div>
+              <p> <b>World Championship:</b> {{rider.worldChampionship}} </p>
+              <p> <b>Races:</b> {{rider.races}} </p>
+            </td>
+            <td>
+              <p> <b>Victories:</b> {{rider.victories}} </p>
+              <p> <b>Podiums:</b> {{rider.podiums}} </p>
+              <p> <b>Poles:</b> {{rider.poles}} </p>
+            </td>
+          </tr>
         </tbody>
       </table>
+      <div>
+        {{#if rider.merchandising}}
+        <div class="me-4">
+          <a class="custom-btn" target="_blank" href="{{rider.merchandising}}">Merchandising</a></p>
+        </div>
+        {{/if}}
+        <div>
+          <button class="custom-btn" width="100"
+            onclick="window.location.href='/riders/{{rider._id}}/gallery'">Gallery</button>
+        </div>
+      </div>
     </div>
+    <div>
+      <div>
+        {{#if currentUser.isAdmin}}
+        <a class="btn btn-success" href="/riders/{{rider._id}}/update" style="width: fit-content;"><i
+            data-feather="edit"></i></a>
+        <a class="btn btn-danger" href="/riders/{{rider._id}}/delete" style="width: fit-content;"><i
+            data-feather="trash-2"></i></a>
+        {{/if}}
+        <a class="btn btn-secondary" href="/riders" style="width: fit-content;"><i data-feather="riders"></i></a>
+      </div>
+
+
+    </div>
+
   </div>
 
-  <div>
-    <details>
-      <summary class="custom-btn">Story:</summary>
-      <p>{{rider.story}}</p>
-    </details>
-
-    {{#if rider.merchandising}}
-
-    <p> <a class="custom-btn" target="_blank" href="{{rider.merchandising}}">Merchandising</a></p>
-
+  <div class="d-flex mt-3">
+    <div class="me-4">
+      <details>
+        <summary class="custom-btn">Story:</summary>
+        <p>{{rider.story}}</p>
+      </details>
+    </div>
+    {{!-- {{#if rider.merchandising}}
+    <div class="me-4">
+      <a class="custom-btn" target="_blank" href="{{rider.merchandising}}">Merchandising</a></p>
+    </div>
     {{/if}}
-
-    <button class="custom-btn" width="100"
-      onclick="window.location.href='/riders/{{rider._id}}/gallery'">Gallery</button>
+    <div>
+      <button class="custom-btn" width="100"
+        onclick="window.location.href='/riders/{{rider._id}}/gallery'">Gallery</button>
+    </div> --}}
   </div>
 
 
 
   {{!-- AQUI VAN LOS BOTONES DE EDITAR, BORRAR --}}
 
-  <div>
+  {{!-- <div>
     {{#if currentUser.isAdmin}}
     <a class="btn btn-success" href="/riders/{{rider._id}}/update" style="width: fit-content;"><i
         data-feather="edit"></i></a>
     <a class="btn btn-danger" href="/riders/{{rider._id}}/delete" style="width: fit-content;"><i
         data-feather="trash-2"></i></a>
     {{/if}}
-    <a class="btn btn-secondary" href="/riders" style="width: fit-content;"><i data-feather="rider"></i></a>
+    <a class="btn btn-secondary" href="/riders" style="width: fit-content;"><i data-feather="riders"></i></a>
   </div>
-  <hr>
+  --}}
 
 
   <div class="col-12">

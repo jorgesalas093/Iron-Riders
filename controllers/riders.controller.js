@@ -118,7 +118,7 @@ module.exports.gallery = (req, res, next) => {
     .then((rider) => {
       console.log("este es mi rider", rider)
       const arrGallery = rider.gallery;
-      res.render('riders/gallery', { arrGallery });
+      res.render('riders/gallery', { arrGallery, rider });
     })
     .catch((err) => {
       next(err)

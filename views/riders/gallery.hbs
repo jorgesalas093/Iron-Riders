@@ -1,9 +1,18 @@
+{{#if arrGallery}}
 <div class="container my-5">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <section>
-            {{#each arrGallery}}
-            <img src={{this}}>
-            {{/each}}
-        </section>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <section class="text-center bg-dark p-4 gallery-container gallery-section">
+                {{#each arrGallery}}
+                <img src="{{this}}" class="img-fluid mb-4 gallery-image" alt="Image">
+                {{/each}}
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <button class="custom-btn" width="100" onclick="window.location.href='/riders/{{rider._id}}'">Back</button>
+        </div>
     </div>
 </div>
+{{/if}}
