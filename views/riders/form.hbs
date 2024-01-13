@@ -1,9 +1,9 @@
-<div id="login" class="container col-xxl-4">
+<div id="login" class="container col-xxl-4" style="background-color: black; padding: 20px; border-radius: 10px;">
   {{#if rider}}
-  <h1 class="text-center mt-5 mb-4">Update</h1>
-  <h2 class="text-center mb-4 text-secondary">{{rider.name}}</h2>
+  <h1 class="text-center mt-5 mb-4" style="color: white;">Update</h1>
+  <h2 class="text-center mb-4 text-secondary" style="color: white;">{{rider.name}}</h2>
   {{else}}
-  <h1 class="text-center mt-5 mb-4">Create</h1>
+  <h1 class="text-center mt-5 mb-4" style="color: white;">Create</h1>
   {{/if}}
   <form class="container-sm mx-auto" style="max-width: 400px;"
     action="/riders/{{#if rider}}{{rider._id}}/update{{else}}create{{/if}}" method="POST" enctype="multipart/form-data">
@@ -13,10 +13,32 @@
         class="{{#if errors}}is-invalid{{/if}} form-control" id="name" aria-describedby="nameHelp">
     </div>
     <div class="mb-3">
+      <label for="flag" style="color: #3498DB;" class="form-label">Flag</label>
+      <input {{#if rider}}value="{{rider.flag}}" {{else}}placeholder="Type flag" {{/if}} type="text" name="flag"
+        class="{{#if errors}}is-invalid{{/if}} form-control" id="flag">
+    </div>
+    <div class="mb-3">
       <label for="nationality" style="color: #3498DB;" class="form-label">Nationality</label>
       <input {{#if rider}}value="{{rider.nationality}}" {{else}}placeholder="Type nationality" required{{/if}}
         type="text" name="nationality" class="{{#if errors}}is-invalid{{/if}} form-control" id="nationality">
     </div>
+    <div class="mb-3">
+      <label for="bike" style="color: #3498DB;" class="form-label">Bike</label>
+      <input {{#if rider}}value="{{rider.bike}}" {{else}}placeholder="Type bike" {{/if}} type="text" name="bike"
+        class="{{#if errors}}is-invalid{{/if}} form-control" id="bike">
+    </div>
+    <div class="mb-3">
+      <label for="dateOfBirth" style="color: #3498DB;" class="form-label">Date of Birth</label>
+      <input {{#if rider}}value="{{rider.dateOfBirth}}" {{else}}placeholder="Type date of birth" {{/if}} type="text"
+        name="dateOfBirth" class="{{#if errors}}is-invalid{{/if}} form-control" id="dateOfBirth">
+    </div>
+    <div class="mb-3">
+      <label for="placeOfBirth" style="color: #3498DB;" class="form-label">Place of Birth</label>
+      <input {{#if rider}}value="{{rider.placeOfBirth}}" {{else}}placeholder="Type place of birth" {{/if}} type="text"
+        name="placeOfBirth" class="{{#if errors}}is-invalid{{/if}} form-control" id="placeOfBirth">
+    </div>
+    <!-- Agregar los demás campos de acuerdo al modelo -->
+    <!-- Campos comunes a todos los formularios -->
     <div class="mb-3">
       <label for="image" style="color: #3498DB;" class="form-label">Image</label>
       <input placeholder="Upload an image" type="file" name="image" class="{{#if errors}}is-invalid{{/if}} form-control"

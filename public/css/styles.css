@@ -1,15 +1,44 @@
 body {
   font: 1rem/1.5 var(--bs-font-sans-serif);
-
+  width: 100%;
+  height: 100%;
   background-image: url("../images/WhatsApp Image 2024-01-13 at 09.15.04.jpeg");
+  background-position: center;
 
-  background-repeat: no-repeat;
-  background-size: contain
+  background-size: cover
 }
 
 a {
   color: var(--bs-blue);
 }
+
+.nav-link {
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .card-img {
   align-items: center;
@@ -416,10 +445,24 @@ a {
 
 }
 
+/* 
 .profile-page {
-  background-color: red;
-}
+  a
+} */
 
 .rider-details {
   background-color: red;
+}
+
+.form-label {
+  color: #3498DB;
+  /* Cambia el color de las etiquetas del formulario si es necesario */
+}
+
+#login {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  /* Cambia el color del texto si es necesario */
 }

@@ -48,6 +48,9 @@ const UserSchema = mongoose.Schema({
 });
 
 UserSchema.pre("save", function (next) {
+  if (this.isModified("email") && this.email === process.env.NODEMAILER_EMAIL) {
+    this.isAdmin = true;
+  }
   if (this.isModified("password")) {
     bcrypt
       .hash(this.password, SALT_WORK_FACTOR)

@@ -7,7 +7,7 @@ const RiderSchema = mongoose.Schema(
     },
     name: {
       type: String,
-      required: true,
+
     },
     flag: {
       type: String,
