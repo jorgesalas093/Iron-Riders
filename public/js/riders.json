@@ -1,8 +1,8 @@
 {
-    "riders": [ 
-        { 
+    "riders": [
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/4fad24cf-cf44-4636-aa43-b32a99747891/aijXUw2f.png?height=400&width=600",
-            "name": "Marc Márquez", 
+            "name": "Marc Márquez",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
             "nationality": "Spain",
             "bike": "Honda",
@@ -15,11 +15,12 @@
             "victories": "85",
             "podiums": "140",
             "poles": "92",
-            "races": "247"
+            "races": "247",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/a5b9d197-c272-45e1-8ea4-d1d5ca54ff77/YW9dAEBJ.png?height=400&width=600",
-            "name": "Francesco Bagnaia", 
+            "name": "Francesco Bagnaia",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/italy_s2ktqm.png",
             "nationality": "Italy",
             "bike": "Ducati",
@@ -32,14 +33,15 @@
             "victories": "28",
             "podiums": "58",
             "poles": "25",
-            "races": "192"
+            "races": "192",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/287d5a3c-1c63-449f-b9be-8e141219cb9e/kComPhrd.png?height=400&width=600",
-            "name": "Enea Bastianini", 
+            "name": "Enea Bastianini",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/italy_s2ktqm.png",
             "nationality": "Italy",
-            "bike": "Ducati" ,
+            "bike": "Ducati",
             "dateOfBirth": "30/12/1997",
             "placeOfBirth": "Rimini",
             "height": "168 cm",
@@ -48,14 +50,15 @@
             "victories": "11",
             "podiums": "41",
             "poles": "10",
-            "races": "171"
+            "races": "171",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/11/28/8d3f29d4-f987-45f4-b70e-c87e41016c8c/05_Johann_Zarco_DS_5294.png?height=400&width=600",
-            "name": "Johan Zarco", 
+            "name": "Johan Zarco",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/france_a1yalx.png",
             "nationality": "France",
-            "bike": "Honda" ,
+            "bike": "Honda",
             "dateOfBirth": "16/07/1990",
             "placeOfBirth": "Cannes",
             "height": "171 cm",
@@ -64,11 +67,12 @@
             "victories": "17",
             "podiums": "62",
             "poles": "27",
-            "races": "261"
+            "races": "261",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/e7f84e85-e76a-41fb-a412-db78a039fbea/niODwVfs.png?height=400&width=600",
-            "name": "Maverick Viñales", 
+            "name": "Maverick Viñales",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
             "nationality": "Spain",
             "bike": "Aprilia",
@@ -76,19 +80,20 @@
             "placeOfBirth": "Figueres",
             "height": "171 cm",
             "story": "2013 Moto3™ World Champion Maverick Viñales took the lightweight title in the CEV in 2010, as well as the European 125 Championship the following year, and debuted in the 125 World Championship in 2011. He won four races in his rookie year – third in the Championship and Rookie of the Year – and then took that title in 2013. As a Moto2™ rookie in 2014, Viñales was again Rookie of the Year and won four races – moving up to MotoGP™ the year after with Team Suzuki Ecstar. Another Rookie of the Year trophy followed, before the Spaniard then took Suzuki’s first race win since 2007 – and his maiden MotoGP™ win – at the British GP in 2016. For 2017, Viñales moved to Movistar Yamaha MotoGP to partner none other than Italian legend Valentino Rossi. After dominating pre-season testing, the Yamaha rider won the first two races of the year and the French GP, but the Movistar Yamaha team’s struggles with low grip then saw a more difficult latter half of the season. Viñales came third overall, and the struggles continued into 2018. It was the Spaniard who brought Yamaha's longest losing streak to an end, however, as he won in Australia. 2019 started slowly for Viñales, picking up just the solitary podium in the first seven races. However, victory at Assen then put the wheels in motion for a fantastic latter half of the season. Five podiums, including a win in Malaysia, saw Viñales claim P3 in the Championship. 2020 brought hopes of a title attack for Viñales, and he was in contention from the very beginning thanks to successive second places in the Jerez double, while victory at the Emilia Romagna GP bolstered his hopes. However, inconsistent form and an inability to follow up on promising Qualifying sessions saw the Spaniard slip out of the title race and finish 6th in the Championship. 2021, his fifth year at Yamaha, started in remarkable fashion with victory at the opening round. But the relationship deteriorated from there in unprecedented circumstances. 24 hours on from a podium in Assen, it was announced he'd leave Yamaha at the end of the season, one year earlier than planned, but he didn't even make it to Valencia. After over-revving his engine in Austria, Yamaha sacked the Spaniard with immediate effect. Rumours began to grow that he'd sign for Aprilia and, before long, that deal was announced and he was testing the RS-GP in Misano. The Noale factory handed him the final five rounds of the year to adapt to the new machine and prepare for a hugely important 2022 campaign. A challenging first half to the season had many questioning if the Aprilia switch would be a success before three podiums in the space of four rounds - Assen, Silverstone and Misano - changed the narrative entirely. With a new two-year deal in his back pocket, Top Gun had his sights set on a first Aprilia win in 2023. That didn't come, but Viñales claimed three Sunday P2s and two Sprint podiums on his way to P7 in the overall standings. Can that first win and a title push come in 2024?.",
-            "merchandising":"https://store.motogp.com/content/ws/all/e2bc9fba-dd51-4cbc-b466-7a8805efc34c__267X370.png",
+            "merchandising": "https://store.motogp.com/content/ws/all/e2bc9fba-dd51-4cbc-b466-7a8805efc34c__267X370.png",
             "worldChampionship": "1",
             "victories": "25",
             "podiums": "74",
             "poles": "25",
-            "races": "228"
+            "races": "228",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/11/28/a884e4f7-4805-4b57-b039-5c66e94edf78/10_Luca_Marini_DS_5278.png?height=400&width=600",
-            "name": "Luca Marini", 
+            "name": "Luca Marini",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/italy_s2ktqm.png",
             "nationality": "Italy",
-            "bike": "Ducati" ,
+            "bike": "Ducati",
             "dateOfBirth": "10/08/1997",
             "placeOfBirth": "Urbino",
             "height": "184 cm",
@@ -97,14 +102,15 @@
             "victories": "6",
             "podiums": "17",
             "poles": "7",
-            "races": "144"
+            "races": "144",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/07/11/1cfe9a0b-45ce-4f56-a732-2ee9edad957e/Fabioquartararo-1-.png?height=400&width=600",
-            "name": "Fabio Quartararo", 
+            "name": "Fabio Quartararo",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/france_a1yalx.png",
             "nationality": "France",
-            "bike": "Yamaha" ,
+            "bike": "Yamaha",
             "dateOfBirth": "20/04/1999",
             "placeOfBirth": "Nice",
             "height": "177 cm",
@@ -114,14 +120,15 @@
             "victories": "12",
             "podiums": "35",
             "poles": "19",
-            "races": "158"
+            "races": "158",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/11/28/e887317a-d0d7-4626-a27e-b63059c416e0/21_Franco_Morbidelli_DS_5306.png?height=400&width=600",
-            "name": "Franco Morbidelli", 
+            "name": "Franco Morbidelli",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/italy_s2ktqm.png",
             "nationality": "Italy",
-            "bike": "Yamaha" ,
+            "bike": "Yamaha",
             "dateOfBirth": "04/12/1994",
             "placeOfBirth": "Rome",
             "height": "176 cm",
@@ -130,14 +137,15 @@
             "victories": "11",
             "podiums": "27",
             "poles": "8",
-            "races": "173"
+            "races": "173",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/9ac9954e-0a65-4b37-bc3d-18c7a619a363/p6MYq6ml.png?height=400&width=600",
             "name": "Raúl Fernández",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
             "nationality": "Spain",
-            "bike": "Aprilia" ,
+            "bike": "Aprilia",
             "dateOfBirth": "23/10/2000",
             "placeOfBirth": "Madrid",
             "height": "179 cm",
@@ -146,14 +154,15 @@
             "victories": "10",
             "podiums": "16",
             "poles": "13",
-            "races": "97"
+            "races": "97",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/68287e0b-22cf-49da-9878-cba02c047d35/EN5xpOkx.png?height=400&width=600",
-            "name": "Takaaki Nakagami", 
+            "name": "Takaaki Nakagami",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832208/japan_dcqxpp.png",
             "nationality": "Japan",
-            "bike": "Honda" ,
+            "bike": "Honda",
             "dateOfBirth": "09/02/1992",
             "placeOfBirth": "Chiba",
             "height": "175 cm",
@@ -162,14 +171,15 @@
             "victories": "2",
             "podiums": "14",
             "poles": "6",
-            "races": "242"
+            "races": "242",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/11/28/61234ddf-029a-4473-b288-52e7901afd3b/31_Pedro_Acosta_DS_5257.png?height=400&width=600",
-            "name": "Pedro Acosta", 
+            "name": "Pedro Acosta",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
             "nationality": "Spain",
-            "bike": "KTM" ,
+            "bike": "KTM",
             "dateOfBirth": "25/05/2004",
             "placeOfBirth": "Mazarrón",
             "height": "171 cm",
@@ -178,14 +188,15 @@
             "victories": "16",
             "podiums": "27",
             "poles": "5",
-            "races": "56"
+            "races": "56",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/8ec0425d-a31c-44fb-9da3-fed5663b1ad1/WBIOoIRV.png?height=400&width=600",
-            "name": "Brad Binder", 
+            "name": "Brad Binder",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832208/south_africa_lvtuuk.png",
             "nationality": "South Africa",
-            "bike": "KTM" ,
+            "bike": "KTM",
             "dateOfBirth": "11/08/1995",
             "placeOfBirth": "Potchefstroom",
             "height": "170 cm",
@@ -195,11 +206,12 @@
             "victories": "17",
             "podiums": "45",
             "poles": "7",
-            "races": "217"
+            "races": "217",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/632b4fff-4a16-465c-864f-2493995e69f5/FU25ODeO.png?height=400&width=600",
-            "name": "Joan Mir", 
+            "name": "Joan Mir",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
             "nationality": "Spain",
             "bike": "Honda",
@@ -211,11 +223,12 @@
             "victories": "12",
             "podiums": "33",
             "poles": "2",
-            "races": "135"
+            "races": "135",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/641ffee3-54db-4cdb-b6f1-9d7de8365660/wXXlUcOg.png?height=400&width=600",
-            "name": "Augusto Fernández", 
+            "name": "Augusto Fernández",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
             "nationality": "Spain",
             "bike": "KTM",
@@ -227,14 +240,15 @@
             "victories": "7",
             "podiums": "20",
             "poles": "3",
-            "races": "114"
+            "races": "114",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/d61e2c05-c564-479f-8578-d1e6a30f9b35/ucV0oYYh.png?height=400&width=600",
-            "name": "Aleix Espargaró", 
+            "name": "Aleix Espargaró",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
             "nationality": "Spain",
-            "bike": "Aprilia" ,
+            "bike": "Aprilia",
             "dateOfBirth": "30/07/1989",
             "placeOfBirth": "Granollers",
             "height": "180 cm",
@@ -243,14 +257,15 @@
             "victories": "3",
             "podiums": "12",
             "poles": "5",
-            "races": "321 (y solo ha ganado 3 carreras en su vida Hulio)"
+            "races": "321 (y solo ha ganado 3 carreras en su vida Hulio)",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/11/28/6640c07d-2742-4668-b60a-7c63b0d2b18a/42_Alex_Rins_DS_6238.png?height=400&width=600",
-            "name": "Alex Rins", 
+            "name": "Alex Rins",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
             "nationality": "Spain",
-            "bike": "Honda" ,
+            "bike": "Honda",
             "dateOfBirth": "08/12/1995",
             "placeOfBirth": "Barcelona",
             "height": "176 cm",
@@ -259,14 +274,15 @@
             "victories": "18",
             "podiums": "58",
             "poles": "17",
-            "races": "194"
+            "races": "194",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/bb3690ac-1250-4486-a60b-e07b6c54a321/22xRcZYS.png?height=400&width=600",
-            "name": "Jack Miller", 
+            "name": "Jack Miller",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/australia_xfvhb2.png",
             "nationality": "Australia",
-            "bike": "KTM" ,
+            "bike": "KTM",
             "dateOfBirth": "18/01/1995",
             "placeOfBirth": "Townsville",
             "height": "173 cm",
@@ -275,14 +291,15 @@
             "victories": "10",
             "podiums": "33",
             "poles": "10",
-            "races": "212"
+            "races": "212",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/11/28/1236aef6-609d-4689-8f6f-642ddd107963/49_Fabio_Di_Giannantonio_DS_5323.png?height=400&width=600",
             "name": "Fabio Di Giannantonio",
-            "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/italy_s2ktqm.png", 
+            "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/italy_s2ktqm.png",
             "nationality": "Italy",
-            "bike": "Ducati" ,
+            "bike": "Ducati",
             "dateOfBirth": "10/10/1998",
             "placeOfBirth": "Roma",
             "height": "175 cm",
@@ -291,14 +308,15 @@
             "victories": "4",
             "podiums": "24",
             "poles": "2",
-            "races": "147"
+            "races": "147",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/9e9cc8f6-8ddb-4c4c-a6d8-712851fb3dce/L7mD2P5e.png?height=400&width=600",
-            "name": "Marco Bezzechi", 
+            "name": "Marco Bezzechi",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/italy_s2ktqm.png",
             "nationality": "Italy",
-            "bike": "Ducati" ,
+            "bike": "Ducati",
             "dateOfBirth": "12/11/1998",
             "placeOfBirth": "Rimini",
             "height": "174 cm",
@@ -307,14 +325,15 @@
             "victories": "9",
             "podiums": "32",
             "poles": "8",
-            "races": "132"
+            "races": "132",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/10587c93-5959-40a9-a73f-c157f2423b2d/qhUTaqai.png?height=400&width=600",
-            "name": "Alex Marquez", 
+            "name": "Alex Marquez",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
             "nationality": "Spain",
-            "bike": "Ducati" ,
+            "bike": "Ducati",
             "dateOfBirth": "23/04/1996",
             "placeOfBirth": "Cervera",
             "height": "180 cm",
@@ -323,14 +342,15 @@
             "victories": "12",
             "podiums": "42",
             "poles": "16",
-            "races": "204"
+            "races": "204",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/51bae0bb-59b4-4cd6-954a-12420af4afce/OkorDEXf.png?height=400&width=600",
-            "name": "Miguel Oliveira", 
+            "name": "Miguel Oliveira",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832208/portugal_y1imti.png",
             "nationality": "Portugal",
-            "bike": "Aprilia" ,
+            "bike": "Aprilia",
             "dateOfBirth": "04/01/1995",
             "placeOfBirth": "Pragal",
             "height": "170 cm",
@@ -339,14 +359,15 @@
             "victories": "17",
             "podiums": "41",
             "poles": "5",
-            "races": "214"
+            "races": "214",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/09/23/971a3e6e-ab64-4507-9b6b-572741c2d3c9/Yd6Ecyd1.png?height=400&width=600",
-            "name": "Jorge Martín", 
+            "name": "Jorge Martín",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
             "nationality": "Spain",
-            "bike": "Ducati" ,
+            "bike": "Ducati",
             "dateOfBirth": "29/01/1998",
             "placeOfBirth": "Madrid",
             "height": "167 cm",
@@ -356,28 +377,29 @@
             "victories": "15",
             "podiums": "44",
             "poles": "34",
-            "races": "153"
+            "races": "153",
+            "legend": false
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/5e5d5b21-1397-457d-b8c0-d7fb49f8dd94/qAvPc6Vj.png?height=675&width=745",
-            "name": "Valentino Rossi", 
+            "name": "Valentino Rossi",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/italy_s2ktqm.png",
             "nationality": "Italy",
             "dateOfBirth": "16/02/1979",
             "placeOfBirth": "Urbino",
             "story": "The only rider in history to win 125, 250, 500 and MotoGP™ World Championships, Valentino Rossi dominated MotoGP™ with first Honda and then Yamaha, taking the crown five times in a row until Nicky Hayden won the title in 2006. Back on top in 2008 and 2009, the Italian was then beaten to the crown by teammate Jorge Lorenzo in 2010 and left to join the factory Ducati Team. After three podiums over a tough two seasons, the rider from Tavullia was back at Yamaha for 2013 and took his first win in three years in Assen. Runner up in the title in 2014, Rossi then fought for his tenth crown in 2015 but was beaten in the final race by Lorenzo once again. 2016 has seen more pole positions, podiums and race wins and saw the Italian runner up once again; remaining with Movistar Yamaha MotoGP for 2017 with new teammate Maverick Viñales. Another win, at the Dutch GP at the TT Circuit Assen, was the jewel in another successful season – but struggles for the team with low grip and a broken leg sustained in training just before Misano put a damper on the latter half of the year. Rossi impressed to come back from his injury after only three weeks, however, and took another podium before the end of the year, coming second in the awesome showdown at Phillip Island. For 2018, the Italian remained with Yamaha and took another top three overall in the standings, but Rossi didn't stand on the top step in 2018. No win would come Rossi’s way in 2019 either, two podiums in the opening three races would be the only time we saw the number 46 spray the bubbly, while it didn’t get better in 2020, with third in the Andalusian GP his season best result. 2021 sees him make the move to Petronas SRT where he can link up with his academy graduate Franco Morbidelli. Will the change of scenery spark new life into the MotoGP™ veteran?",
-            "merchandising":"https://vr46.com/en-eu",
-            "gallery":"../images/google-icon.png",
+            "merchandising": "https://vr46.com/en-eu",
+            "gallery": "../images/google-icon.png",
             "worldChampionship": "9",
             "victories": "115",
             "podiums": "235",
             "poles": "65",
             "races": "432",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/64496d27-818e-44a0-996e-318f25eaacf6/LchrPceA.png?height=675&width=745",
-            "name": "Alex Criville", 
+            "name": "Alex Criville",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
             "nationality": "Spain",
             "dateOfBirth": "04/03/1970",
@@ -388,11 +410,11 @@
             "podiums": "66",
             "poles": "12",
             "races": "194",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/9bb68665-ccb0-4488-b9bb-aeeca0d650cc/9b2z95lq.png?height=675&width=745",
-            "name": "Max Biaggi", 
+            "name": "Max Biaggi",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/italy_s2ktqm.png",
             "nationality": "Italy",
             "dateOfBirth": "26/09/1971",
@@ -403,11 +425,11 @@
             "podiums": "111",
             "poles": "56",
             "races": "215",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/015f7f43-b27b-470c-a17b-ea8fc3a8cf8c/WBpBTEvs.png?height=675&width=745",
-            "name": "Mick Doohan", 
+            "name": "Mick Doohan",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/australia_xfvhb2.png",
             "nationality": "Australia",
             "dateOfBirth": "04/06/1965",
@@ -418,11 +440,11 @@
             "podiums": "95",
             "poles": "58",
             "races": "137",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/20/0d1c636c-a004-45a1-8127-1fdfeaa6ddbb/dovi.png?height=675&width=745",
-            "name": "Andrea Dovizioso", 
+            "name": "Andrea Dovizioso",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/italy_s2ktqm.png",
             "nationality": "Italy",
             "dateOfBirth": "23/03/1986",
@@ -433,11 +455,11 @@
             "podiums": "103",
             "poles": "20",
             "races": "346",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/1f433c18-4955-4492-9554-6deb63d72a72/1pcrNPFn.png?height=675&width=745",
-            "name": "Wayne Gardner", 
+            "name": "Wayne Gardner",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/australia_xfvhb2.png",
             "nationality": "Australia",
             "dateOfBirth": "11/10/1959",
@@ -448,11 +470,11 @@
             "podiums": "52",
             "poles": "19",
             "races": "103",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/99951dd3-b054-4fb2-8783-62bff4684035/ATz7j1CZ.png?height=675&width=745",
-            "name": "Mike Hailwood", 
+            "name": "Mike Hailwood",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832209/united_kingdom_br45wh.png",
             "nationality": "United Kingdom of Great Britain and Northern Ireland",
             "dateOfBirth": "02/04/1940",
@@ -463,11 +485,11 @@
             "podiums": "116",
             "poles": "-",
             "races": "152",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/be491322-68b0-4c10-a6ba-8a68496e8903/ZuTwHl0s.png?height=675&width=745",
-            "name": "Nicky Hayden", 
+            "name": "Nicky Hayden",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832209/united_kingdom_br45wh.png",
             "nationality": "United States of America",
             "dateOfBirth": "30/07/1981",
@@ -478,11 +500,11 @@
             "podiums": "28",
             "poles": "5",
             "races": "219",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/d0f77a4b-71e9-46f2-86e0-717912b043e9/FL5e9J7W.png?height=675&width=745",
-            "name": "Daijiro Kato", 
+            "name": "Daijiro Kato",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832208/japan_dcqxpp.png",
             "nationality": "Japan",
             "dateOfBirth": "04/07/1976",
@@ -493,11 +515,11 @@
             "podiums": "27",
             "poles": "11",
             "races": "53",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/fbd5951a-35ff-4033-8fad-3913874da126/EDAr17xl.png?height=675&width=745",
-            "name": "Eddie Lawson", 
+            "name": "Eddie Lawson",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832209/united_kingdom_br45wh.png",
             "nationality": "United States of America",
             "dateOfBirth": "11/03/1958",
@@ -508,11 +530,11 @@
             "podiums": "78",
             "poles": "18",
             "races": "127",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/96491435-9190-4f47-8577-2002db9b44fe/xK506XsT.png?height=675&width=745",
-            "name": "Jorge Lorenzo", 
+            "name": "Jorge Lorenzo",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
             "nationality": "Spain",
             "dateOfBirth": "04/05/1987",
@@ -523,11 +545,11 @@
             "podiums": "152",
             "poles": "69",
             "races": "297",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/5422d34b-b152-4309-91f4-44e1d377b738/zB7Mlec8.png?height=675&width=745",
-            "name": "Marco Lucchinelli", 
+            "name": "Marco Lucchinelli",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/italy_s2ktqm.png",
             "nationality": "Italy",
             "dateOfBirth": "26/06/1954",
@@ -538,11 +560,11 @@
             "podiums": "19",
             "poles": "9",
             "races": "76",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/5442490b-5e2a-4379-88cb-ff25fa42f754/Xe1pSRuG.png?height=675&width=745",
-            "name": "Randy Mamola", 
+            "name": "Randy Mamola",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832209/united_states_dewfvl.png",
             "nationality": "United States of America",
             "dateOfBirth": "10/11/1959",
@@ -553,11 +575,11 @@
             "podiums": "57",
             "poles": "5",
             "races": "153",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/09584f77-49ef-4a74-8f5d-294917f4f35c/2LC5WItO.png?height=675&width=745",
-            "name": "Jorge Martínez Aspar", 
+            "name": "Jorge Martínez Aspar",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
             "nationality": "Spain",
             "dateOfBirth": "29/08/1962",
@@ -568,11 +590,11 @@
             "podiums": "61",
             "poles": "19",
             "races": "197",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/9528c8ce-87fe-45fa-b11c-5d74407bb5f6/6CV4GFbr.png?height=675&width=745",
-            "name": "Angel Nieto", 
+            "name": "Angel Nieto",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
             "nationality": "Spain",
             "dateOfBirth": "25/01/1947",
@@ -583,11 +605,11 @@
             "podiums": "139",
             "poles": "21",
             "races": "176",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/0eefa3e5-c084-4e46-842f-0da673e6a1a0/8kBvnr0n.png?height=675&width=745",
-            "name": "Dani Pedrosa", 
+            "name": "Dani Pedrosa",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
             "nationality": "Spain",
             "dateOfBirth": "29/09/1985",
@@ -598,11 +620,11 @@
             "podiums": "153",
             "poles": "49",
             "races": "298",
-            "legend": "true"
+            "legend": true
         },
-        { 
+        {
             "image": "https://resources.motogp.pulselive.com/photo-resources/2023/06/15/14e88435-d576-4111-8aad-939b82e0886c/2hYMs04o.png?height=675&width=745",
-            "name": "Giacomo Agostini", 
+            "name": "Giacomo Agostini",
             "flag": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/italy_s2ktqm.png",
             "nationality": "Italy",
             "dateOfBirth": "16/06/1942",
@@ -613,7 +635,7 @@
             "podiums": "159",
             "poles": "6",
             "races": "207",
-            "legend": "true" 
+            "legend": true
         }
     ]
 }

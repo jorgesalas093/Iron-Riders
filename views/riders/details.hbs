@@ -1,9 +1,9 @@
 <div class="container  d-flex flex-column justify-content-center mt-2">
   <div class="col-12 d-flex justify-content-start">
 
-    <div>
-      <h1 class="bg-light mt-3 d-flex justify-content-center">{{rider.name}} <img src="{{rider.flag}}" class="card-flag"
-          alt="{{rider.name}}" width="35px" height="25px" /></h1>
+    <div class="bg-secondary mt-4">
+      <h1 class="d-flex justify-content-center">{{rider.name}} <img class="mt-3 ms-3" src="{{rider.flag}}"
+          class="card-flag" alt="{{rider.flag}}" width="35px" height="25px" /></h1>
       <img src="{{rider.image}}" class="img-thumbnail" alt="{{rider.name}}" width="450" />
     </div>
     <div class="ms-5 mt-5 flex-column">
@@ -16,12 +16,9 @@
             <td>
               <p> <b>From</b>: {{rider.nationality}} </p>
             </td>
-            {{#if rider.bike}}
             <td>
-              <p> <b>Bike:</b> {{rider.bike}} </p>
+              <p> <b>Victories:</b> {{rider.victories}} </p>
             </td>
-            {{/if}}
-
           </tr>
           <tr>
             <td>
@@ -42,72 +39,48 @@
               <p> <b>Races:</b> {{rider.races}} </p>
             </td>
             <td>
-              <p> <b>Victories:</b> {{rider.victories}} </p>
+              {{#if rider.bike}}
+
+              <p> <b>Bike:</b> {{rider.bike}} </p>
+
+              {{/if}}
               <p> <b>Podiums:</b> {{rider.podiums}} </p>
               <p> <b>Poles:</b> {{rider.poles}} </p>
             </td>
           </tr>
         </tbody>
       </table>
-      <div class="d-flex justify-content-around">
-        {{#if rider.merchandising}}
-        <div class="me-4">
-          <a class="custom-btn" target="_blank" href="{{rider.merchandising}}">Merchandising</a></p>
-        </div>
-        {{/if}}
-        <div>
-          <button class="custom-btn" width="100"
-            onclick="window.location.href='/riders/{{rider._id}}/gallery'">Gallery</button>
-        </div>
-      </div>
 
-      <div class="d-flex flex-colum justify-content-around mt-3">
+      <div class="btn-group" role="group" aria-label="Basic example">
         {{#if currentUser.isAdmin}}
-        <a class="btn btn-success" href="/riders/{{rider._id}}/update" style="width: fit-content;"><i
-            data-feather="edit"></i></a>
-        <a class="btn btn-danger" href="/riders/{{rider._id}}/delete" style="width: fit-content;"><i
+        <a class="btn btn-success rounded-circle" href="/riders/{{rider._id}}/update" style="width: fit-content;"><i
+            data-feather="settings"></i></a>
+        <a class="btn btn-danger rounded-circle" href="/riders/{{rider._id}}/delete" style="width: fit-content;"><i
             data-feather="trash-2"></i></a>
         {{/if}}
-        <a class="btn btn-secondary" href="/riders" style="width: fit-content;"><i data-feather="riders"></i></a>
+
+        <a class="btn custom-btn rounded-circle" onclick="window.location.href='/riders/{{rider._id}}/gallery'"><i
+            data-feather="image"></i></a>
+        {{#if rider.merchandising}}
+        <div class="mt-2">
+          <a class="custom-btn rounded-circle" target="_blank" href="{{rider.merchandising}}"><i
+              data-feather="shopping-bag"></i></a>
+        </div>
+        {{/if}}
+        <a class="btn btn-secondary rounded-circle" href="/riders" style="width: fit-content;"><i
+            data-feather="corner-down-left"></i></a>
       </div>
-
     </div>
-
-
   </div>
 
   <div class="d-flex mt-3">
-    <div class="me-4">
+    <div class="me-4 bg-white p-3 rounded">
       <details>
-        <summary class="custom-btn">Story:</summary>
+        <summary class="btn btn-info rounded-circle"><i data-feather="book-open"></i></summary>
         <p>{{rider.story}}</p>
       </details>
     </div>
-    {{!-- {{#if rider.merchandising}}
-    <div class="me-4">
-      <a class="custom-btn" target="_blank" href="{{rider.merchandising}}">Merchandising</a></p>
-    </div>
-    {{/if}}
-    <div>
-      <button class="custom-btn" width="100"
-        onclick="window.location.href='/riders/{{rider._id}}/gallery'">Gallery</button>
-    </div> --}}
   </div>
-
-
-
-  {{!-- AQUI VAN LOS BOTONES DE EDITAR, BORRAR --}}
-
-  {{!-- <div>
-    {{#if currentUser.isAdmin}}
-    <a class="btn btn-success" href="/riders/{{rider._id}}/update" style="width: fit-content;"><i
-        data-feather="edit"></i></a>
-    <a class="btn btn-danger" href="/riders/{{rider._id}}/delete" style="width: fit-content;"><i
-        data-feather="trash-2"></i></a>
-    {{/if}}
-    <a class="btn btn-secondary" href="/riders" style="width: fit-content;"><i data-feather="riders"></i></a>
-  </div>
-  --}}
 
 
   <div class="col-12">
@@ -120,7 +93,7 @@
       <div class="card-footer d-flex justify-content-between">
         <small class="text-body-secondary">Post by {{this.user.username}}</small>
         <a class="btn btn-danger" href="/comments/{{this._id}}/delete" style="width: fit-content;"><i
-            data-feather="trash-2" width="16" style="color: red;"></i></a>
+            data-feather="trash-2" width="16" style="color: white;"></i></a>
       </div>
 
     </div>

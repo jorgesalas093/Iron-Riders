@@ -44,7 +44,16 @@ module.exports.details = function (req, res, next) {
 
 //aqui get
 module.exports.create = (req, res, next) => {
-  res.render("riders/form"); // meter un condicional de errores
+
+  const { id } = req.params;
+  Rider.findById(id)
+    .then(() => {
+      const flagEnumValues = Rider.schema.path('flag').enumValues;
+      console.log(flagEnumValues);
+      res.render("riders/form", { flagEnumValues })
+    })
+    .catch((error) => next(error));
+
 };
 
 //aqui post
@@ -64,7 +73,7 @@ module.exports.doCreate = function (req, res, next) {
   }
   Rider.create(req.body)
     .then((riderDB) => {
-      console.log("rider despuest de la db ", riderDB)
+
       res.redirect(`/riders/${riderDB.id}`);
     })
     .catch((err) => {
@@ -76,29 +85,29 @@ module.exports.doCreate = function (req, res, next) {
 module.exports.update = (req, res, next) => {
   const { id } = req.params;
   Rider.findById(id)
-    .then((rider) => res.render("riders/form", { rider })) // meter un condicional de errores
+    .then((rider) => {
+      const flagEnumValues = Rider.schema.path('flag').enumValues;
+      console.log(flagEnumValues);
+      res.render("riders/form", { rider, flagEnumValues })
+    }) // meter un condicional de errores
     .catch((error) => next(error));
 };
-
+//REVISAR QUE DA FALLO EN EL UPDATE SI NO PASAS FOTOS
 module.exports.doUpdate = function (req, res, next) {
   const { id } = req.params;
   const updates = { ...req.body };
-
-  console.log("------------>>>>>>>>> ", req.files.image)
 
   if (req.files.image) {
     updates.image = req.files.image[0].path;
   }
 
-  if (req.files) {
+  if (req.files.gallery) {
     updates.gallery = req.files.gallery.map(galery => galery.path);
   }
 
   Rider.findByIdAndUpdate(id, updates, { new: true })
     .then((riderDB) => res.redirect(`/riders/${riderDB.id}`))
     .catch((err) => {
-      //Comprobar err instanceof mongoose.ValidationError
-
       next(err);
     });
 };

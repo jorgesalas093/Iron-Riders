@@ -11,6 +11,16 @@ const RiderSchema = mongoose.Schema(
     },
     flag: {
       type: String,
+      enum: [
+        {
+            "spain": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
+            "italy": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/italy_s2ktqm.png",
+            "france": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/france_a1yalx.png",
+            "southAfrica": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832208/south_africa_lvtuuk.png",
+            "United States of America": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832209/united_kingdom_br45wh.png",
+        }
+    ],
+      default: "Other",
     },
     nationality: {
       type: String,

@@ -1,16 +1,15 @@
-<form action="/profile/{{currentUser._id}}/edit" class="container-sm mx-auto" style="max-width: 400px;" method="POST"
-    enctype="multipart/form-data">
+<div id="edit-profile" class="container col-xxl-4" style="background-color: black; padding: 20px; border-radius: 10px;">
+  <h1 class="text-center mt-5 mb-4" style="color: white;">Edit Profile</h1>
+  <form action="/profile/{{currentUser._id}}/edit" method="POST" enctype="multipart/form-data" class="container-sm mx-auto" style="max-width: 400px;">
     <div class="mb-3">
-        <label for="username" style="color: #3498db;" class="form-label">Username</label>
-        <input {{#if currentUser}}value="{{currentUser.username}}" {{else}}placeholder="Type username" required{{/if}}
-            type="text" name="username" class="{{#if errors}}is-invalid{{/if}} form-control" id="username"
-            aria-describedby="usernameHelp">
+      <label for="username" style="color: #3498DB;" class="form-label">Username</label>
+      <input {{#if currentUser}}value="{{currentUser.username}}" {{else}}placeholder="Type username" required{{/if}}
+        type="text" name="username" class="{{#if errors}}is-invalid{{/if}} form-control" id="username" aria-describedby="usernameHelp">
     </div>
     <div class="mb-3">
-        <label for="picture" style="color: #3498db;" class="form-label">Profile Picture</label>
-        <input placeholder="Upload a profile picture" type="file" name="picture"
-            class="{{#if errors}}is-invalid{{/if}} form-control" id="picture">
+      <label for="picture" style="color: #3498DB;" class="form-label">Profile Picture</label>
+      <input placeholder="Upload a profile picture" type="file" name="picture" class="{{#if errors}}is-invalid{{/if}} form-control" id="picture">
     </div>
-
     <button href="/profile/{{currentUser._id}}/edit" type="submit" class="btn btn-primary">Submit</button>
-</form>
+  </form>
+</div>

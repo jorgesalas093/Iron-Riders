@@ -50,9 +50,6 @@ router.get('/riders/:id/gallery', ridersController.gallery);
 router.get("/comments/:id/delete", authMiddleware.isAuthenticated, commentsController.delete);
 router.post("/comments/:id/create", authMiddleware.isAuthenticated, commentsController.doCreate);
 
-//forum
-router.get("/forum", authMiddleware.isAuthenticated, commentsController.ForumDelete);
-router.post("/forum", authMiddleware.isAuthenticated, commentsController.ForumDoCreate);
 
 // likes
 

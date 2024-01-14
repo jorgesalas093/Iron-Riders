@@ -5,11 +5,11 @@
         <a href="/riders/{{rider.id}}" class="link-opacity-50-hover"><img class="card-img" src={{rider.image}} /></a>
         <div class="cardText">
           <h5 class="card-title"><img width="25" src={{rider.flag}} /> {{rider.name}}</h5>
-           {{#if currentUser.isAuthenticated}}
+          {{#if currentUser}}
           <div class="d-flex justify-content-end">
             <form action="/user/{{rider._id}}/like" method="POST">
               <button type="submit"
-                class="btn  {{#riderIsLikedByUser likes=rider.likes userId=currentUser._id}} btn-danger {{else}} btn-secondary {{/riderIsLikedByUser}}">Likes
+                class="btn  {{#riderIsLikedByUser likes=rider.likes userId=currentUser._id}} btn-danger {{else}} btn-info {{/riderIsLikedByUser}}">Likes
                 {{rider.likes.length}}</button>
             </form>
           </div>

@@ -12,12 +12,39 @@
       <input {{#if rider}}value="{{rider.name}}" {{else}}placeholder="Type name" required{{/if}} type="text" name="name"
         class="{{#if errors}}is-invalid{{/if}} form-control" id="name" aria-describedby="nameHelp">
     </div>
-    <div class="mb-3">
+
+
+
+
+    {{!--
+    <div class="mb-3 drop-dawn">
       <label for="flag" style="color: #3498DB;" class="form-label">Flag</label>
-      <input {{#if rider}}value="{{rider.flag}}" {{else}}placeholder="Type flag" {{/if}} type="text" name="flag"
+      <input {{#if rider}}value=" {{rider.flag}}" {{else}}placeholder="Type flag" {{/if}} type="text" name="flag"
         class="{{#if errors}}is-invalid{{/if}} form-control" id="flag">
-    </div>
+    </div> --}}
+    {{!-- EJEMPLO MARCOS --}}
     <div class="mb-3">
+      <label for="flag" style="color: #3498db;" class="form-label">Flag</label>
+      <select name="flag" class="form-select" aria-label="Default select example">
+        {{#each flagEnumValues}}
+        {{#if rider.flag }}
+        <option value="{{this}}" {{#isSelected selectValue=this dbValue=../rider.flag}}selected{{/isSelected}}>{{this}}
+        </option>
+        {{else}}
+        <option value="{{this}}" {{#isSelected selectValue=this dbValue='Other' }}selected{{/isSelected}}>{{this}}
+        </option>
+        {{/if}}
+        {{/each}}
+      </select>
+    </div>
+
+
+
+
+
+
+
+    <div class="mb-3 dropdown">
       <label for="nationality" style="color: #3498DB;" class="form-label">Nationality</label>
       <input {{#if rider}}value="{{rider.nationality}}" {{else}}placeholder="Type nationality" required{{/if}}
         type="text" name="nationality" class="{{#if errors}}is-invalid{{/if}} form-control" id="nationality">
@@ -29,7 +56,7 @@
     </div>
     <div class="mb-3">
       <label for="dateOfBirth" style="color: #3498DB;" class="form-label">Date of Birth</label>
-      <input {{#if rider}}value="{{rider.dateOfBirth}}" {{else}}placeholder="Type date of birth" {{/if}} type="text"
+      <input {{#if rider}}value="{{rider.dateOfBirth}}" {{else}}placeholder="Type date of birth" {{/if}} type="date"
         name="dateOfBirth" class="{{#if errors}}is-invalid{{/if}} form-control" id="dateOfBirth">
     </div>
     <div class="mb-3">
