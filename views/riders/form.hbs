@@ -40,7 +40,8 @@
     <div class="mb-3">
       <label for="story" style="color: #3498DB;" class="form-label">Story</label>
       <textarea {{#if rider}}placeholder="{{rider.story}}" {{else}}placeholder="Type story" {{/if}} name="story"
-        class="{{#if errors}}is-invalid{{/if}} form-control" id="story" rows="4"></textarea>
+        class="{{#if errors}}is-invalid{{/if}} form-control" id="story"
+        rows="4">{{#if rider}}{{rider.story}}{{/if}}</textarea>
     </div>
     <div class="mb-3">
       <label for="dateOfBirth" style="color: #3498DB;" class="form-label">Date of Birth</label>
