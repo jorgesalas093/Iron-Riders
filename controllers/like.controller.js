@@ -1,5 +1,5 @@
 const Like = require('../models/Like.model')
-
+const Rider = require("../models/Rider.model");
 
 module.exports.doCreate = (req, res, next) => {
     const { riderId } = req.params;
@@ -10,16 +10,35 @@ module.exports.doCreate = (req, res, next) => {
             if (!like) {
 
                 return Like.create({ user: req.session.currentUser._id, rider: riderId })
-                    .then((like) => {
-                        console.log("lllllllllllllllllllll", like)
-                        res.redirect('/riders')
-                        //    res.redirect('/riders?legend=true')
+                    .then(() => {
+                        // Después de crear el like, obtén la información completa del rider
+                        return Rider.findById(riderId);
+                    })
+
+                    .then((rider) => {
+                        console.log("lllllllllllllllllllll", rider);
+                        if (rider.legend) {
+
+                            res.redirect('/riders?legend=true')
+                        }
+                        else {
+                            res.redirect('/riders')
+                        }
                     })
             } else {
                 return Like.findByIdAndDelete(like._id)
                     .then(() => {
-                        res.redirect('/riders')
-                        //    res.redirect('/riders?legend=true')
+                        // Después de crear el like, obtén la información completa del rider
+                        return Rider.findById(riderId);
+                    })
+                    .then((rider) => {
+                        if (rider.legend) {
+
+                            res.redirect('/riders?legend=true')
+                        }
+                        else {
+                            res.redirect('/riders')
+                        }
                     })
             }
         })

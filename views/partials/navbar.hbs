@@ -26,10 +26,11 @@
       <li class="nav-item">
         <a class="nav-link active text-white" aria-current="page" href="/riders?legend=true">Riders Legends</a>
       </li>
-
+      {{#if currentUser}}
       <li class="nav-item">
         <a class="nav-link active text-danger" aria-current="page" href="/logout">Logout</a>
       </li>
+      {{/if}}
     </ul>
     <a class="navbar-brand"></a>
     <form class="d-flex" role="search">
