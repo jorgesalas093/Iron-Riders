@@ -51,6 +51,17 @@
       <input {{#if rider}}value="{{rider.placeOfBirth}}" {{else}}placeholder="Type place of birth" {{/if}} type="text"
         name="placeOfBirth" class="{{#if errors}}is-invalid{{/if}} form-control" id="placeOfBirth">
     </div>
+
+
+    <div class="mb-3">
+      <label for="legend" style="color: #3498DB;" class="form-label">Is legend?</label>
+      <select name="legend" class="form-select" aria-label="Default select example">
+        <option>true</option>
+        <option>false</option>
+      </select>
+    </div>
+
+
     <div class="mb-3">
       <label for="image" style="color: #3498DB;" class="form-label">Image</label>
       <input placeholder="Upload an image" type="file" name="image" class="{{#if errors}}is-invalid{{/if}} form-control"
