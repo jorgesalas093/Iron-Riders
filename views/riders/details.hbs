@@ -67,8 +67,15 @@
               data-feather="shopping-bag"></i></a>
         </div>
         {{/if}}
+        {{#if rider.legend}}
+        <a class="btn btn-secondary rounded-circle" href="/riders?legend=true" style="width: fit-content;"><i
+            data-feather="corner-down-left"></i></a>
+        {{else}}
+
+
         <a class="btn btn-secondary rounded-circle" href="/riders" style="width: fit-content;"><i
             data-feather="corner-down-left"></i></a>
+        {{/if}}
       </div>
     </div>
   </div>
