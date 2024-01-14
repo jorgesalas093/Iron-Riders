@@ -1,9 +1,10 @@
 <div>
   <div class="card h-100 {{#if rider.legend}}bg-warning{{else}} bg-secondary{{/if}}">
-    <div class="card-body f-flex aling-item-colum container-fluid">
-      <div>
+    <div class="card-body f-flex aling-item-colum ">
+      <div class="container-xxl">
         <div>
-          <a href="/riders/{{rider.id}}" class="link-opacity-50-hover"><img class="card-img " src={{rider.image}} /></a>
+          <a href="/riders/{{rider.id}}" class="link-opacity-50-hover"><img class="card-img" height="300" width="500"
+              src={{rider.image}} /></a>
         </div>
         <div class="cardText mb-1">
           <h5 class="card-title"><img width="25" src={{rider.flag}} /> {{rider.name}}</h5>
