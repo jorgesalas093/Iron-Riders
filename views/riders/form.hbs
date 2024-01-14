@@ -45,9 +45,10 @@
     </div>
     <div class="mb-3">
       <label for="dateOfBirth" style="color: #3498DB;" class="form-label">Date of Birth</label>
-      <input {{#if rider}}value="{{rider.dateOfBirth}}" {{else}}placeholder="Type date of birth" {{/if}} type="date"
+      <input {{#if rider}} value="{{rider.dateOfBirth}}" {{else}} placeholder="Type date of birth" {{/if}} type="text"
         name="dateOfBirth" class="{{#if errors}}is-invalid{{/if}} form-control" id="dateOfBirth">
     </div>
+
     <div class="mb-3">
       <label for="placeOfBirth" style="color: #3498DB;" class="form-label">Place of Birth</label>
       <input {{#if rider}}value="{{rider.placeOfBirth}}" {{else}}placeholder="Type place of birth" {{/if}} type="text"
