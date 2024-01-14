@@ -38,6 +38,11 @@
         class="{{#if errors}}is-invalid{{/if}} form-control" id="bike">
     </div>
     <div class="mb-3">
+      <label for="victories" style="color: #3498DB;" class="form-label">Victories</label>
+      <input {{#if rider}}value="{{rider.victories}}" {{else}}placeholder="Victories" {{/if}} type="number"
+        name="victories" class="{{#if errors}}is-invalid{{/if}} form-control" id="victories">
+    </div>
+    <div class="mb-3">
       <label for="story" style="color: #3498DB;" class="form-label">Story</label>
       <textarea {{#if rider}}placeholder="{{rider.story}}" {{else}}placeholder="Type story" {{/if}} name="story"
         class="{{#if errors}}is-invalid{{/if}} form-control" id="story"

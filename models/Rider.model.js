@@ -13,17 +13,17 @@ const RiderSchema = mongoose.Schema(
       type: String,
       enum: [
         {
-            "Spain": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
-            "Italy": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/italy_s2ktqm.png",
-            "France": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/france_a1yalx.png",
-            "SouthAfrica": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832208/south_africa_lvtuuk.png",
-            "United States of America": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832209/united_kingdom_br45wh.png",
-            "Japan": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832208/japan_dcqxpp.png",
-            "Australia": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/australia_xfvhb2.png",
-            "Portugal": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832208/portugal_y1imti.png",
-            "United Kingdom of Great Britain and Northern Ireland": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832209/united_kingdom_br45wh.png"
+          "Spain": "https://res.cloudinary.com/dwahroldl/image/upload/v1703102384/ironhack/test/eaum1o3v0vmqtwgtkopt.png",
+          "Italy": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/italy_s2ktqm.png",
+          "France": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/france_a1yalx.png",
+          "SouthAfrica": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832208/south_africa_lvtuuk.png",
+          "United States of America": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832209/united_states_dewfvl.png",
+          "Japan": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832208/japan_dcqxpp.png",
+          "Australia": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832207/australia_xfvhb2.png",
+          "Portugal": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832208/portugal_y1imti.png",
+          "United Kingdom of Great Britain and Northern Ireland": "https://res.cloudinary.com/dwahroldl/image/upload/v1704832209/united_kingdom_br45wh.png"
         }
-    ],
+      ],
       default: "Other"
     },
     nationality: {
