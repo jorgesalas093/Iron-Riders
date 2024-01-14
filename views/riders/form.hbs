@@ -17,7 +17,8 @@
       <select name="flag" class="form-select" aria-label="Default select example">
         {{#each flagEnumValues}}
         {{#if rider.flag }}
-        <option value="{{this}}" {{#isSelected selectValue=this dbValue=../rider.flag}}selected{{/isSelected}}>{{this}}
+        <option value="{{rider.flag}}" {{#isSelected selectValue=this dbValue=../rider.flag}}selected{{/isSelected}}>
+          {{this}}
         </option>
         {{else}}
         <option value="{{this}}" {{#isSelected selectValue=this dbValue='Other' }}selected{{/isSelected}}>{{this}}

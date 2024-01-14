@@ -1,10 +1,11 @@
 <div>
-  <div class="card h-100 bg-secondary">
-    <div class="card-body ">
+  <div class="card h-100 {{#if rider.legend}}bg-warning{{else}} bg-secondary{{/if}}">
+    <div class="card-body f-flex aling-item-colum container-fluid">
       <div>
-        <a href="/riders/{{rider.id}}" class="link-opacity-50-hover"><img with="600" height="400" class="card-img"
-            src={{rider.image}} /></a>
-        <div class="cardText">
+        <div>
+          <a href="/riders/{{rider.id}}" class="link-opacity-50-hover"><img class="card-img " src={{rider.image}} /></a>
+        </div>
+        <div class="cardText mb-1">
           <h5 class="card-title"><img width="25" src={{rider.flag}} /> {{rider.name}}</h5>
           {{#if currentUser}}
           <div class="d-flex justify-content-end">
@@ -17,10 +18,6 @@
           {{/if}}
         </div>
       </div>
-
-
-
-
     </div>
   </div>
 </div>
